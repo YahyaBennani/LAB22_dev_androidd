@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvHello"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello JNI"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:paddingBottom="20dp"
+            android:gravity="center"/>
+
+        <!-- Factorial Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calcul du Factoriel :"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/etFactorial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Entrez un nombre (ex: 5)"
+            android:inputType="number" />
+        <Button
+            android:id="@+id/btnFactorial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculer Factoriel" />
+        <TextView
+            android:id="@+id/tvFactResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Résultat : "
+            android:paddingBottom="20dp" />
+
+        <!-- Reverse String Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inversion de Chaîne :"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/etReverse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Entrez du texte" />
+        <Button
+            android:id="@+id/btnReverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inverser" />
+        <TextView
+            android:id="@+id/tvReverseResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Résultat : "
+            android:paddingBottom="20dp" />
+
+        <!-- Array Sum Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Somme d'un tableau :"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/etArray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombres séparés par des espaces (ex: 10 20 30)" />
+        <Button
+            android:id="@+id/btnArray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculer Somme" />
+        <TextView
+            android:id="@+id/tvArrayResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Résultat : "
+            android:paddingBottom="20dp" />
+
+        <!-- Matrix Multiplication Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Multiplication Matricielle (2x2) :"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/etMatrixA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Matrice A (ex: 1 2 3 4)" />
+        <EditText
+            android:id="@+id/etMatrixB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Matrice B (ex: 5 6 7 8)" />
+        <Button
+            android:id="@+id/btnMatrix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Multiplier Matrices" />
+        <TextView
+            android:id="@+id/tvMatrixResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Résultat : "
+            android:paddingBottom="40dp" />
+
+    </LinearLayout>
+</ScrollView>
